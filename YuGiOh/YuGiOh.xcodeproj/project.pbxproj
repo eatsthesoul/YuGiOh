@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F353AF6280089AF0021E11B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353AF5280089AF0021E11B /* AppDelegate.swift */; };
-		4F353AF8280089AF0021E11B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353AF7280089AF0021E11B /* SceneDelegate.swift */; };
 		4F353AFA280089AF0021E11B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353AF9280089AF0021E11B /* ViewController.swift */; };
 		4F353AFF280089B10021E11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F353AFE280089B10021E11B /* Assets.xcassets */; };
 		4F353B02280089B10021E11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F353B00280089B10021E11B /* LaunchScreen.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		4F353AF2280089AF0021E11B /* YuGiOh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuGiOh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F353AF5280089AF0021E11B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4F353AF7280089AF0021E11B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4F353AF9280089AF0021E11B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4F353AFE280089B10021E11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F353B01280089B10021E11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				4F353AF5280089AF0021E11B /* AppDelegate.swift */,
-				4F353AF7280089AF0021E11B /* SceneDelegate.swift */,
 				4F353AF9280089AF0021E11B /* ViewController.swift */,
 				4F353AFE280089B10021E11B /* Assets.xcassets */,
 				4F353B00280089B10021E11B /* LaunchScreen.storyboard */,
@@ -152,7 +149,6 @@
 			files = (
 				4F353AFA280089AF0021E11B /* ViewController.swift in Sources */,
 				4F353AF6280089AF0021E11B /* AppDelegate.swift in Sources */,
-				4F353AF8280089AF0021E11B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +294,8 @@
 				INFOPLIST_FILE = YuGiOh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -326,6 +324,8 @@
 				INFOPLIST_FILE = YuGiOh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
