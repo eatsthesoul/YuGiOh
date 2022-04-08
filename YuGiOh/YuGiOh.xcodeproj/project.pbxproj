@@ -12,6 +12,9 @@
 		4F353AFA280089AF0021E11B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353AF9280089AF0021E11B /* ViewController.swift */; };
 		4F353AFF280089B10021E11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F353AFE280089B10021E11B /* Assets.xcassets */; };
 		4F353B02280089B10021E11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F353B00280089B10021E11B /* LaunchScreen.storyboard */; };
+		4F353B0B28008C500021E11B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F353B0A28008C500021E11B /* SnapKit */; };
+		4F353B0E28008C920021E11B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4F353B0D28008C920021E11B /* Kingfisher */; };
+		4F353B1128008D190021E11B /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 4F353B1028008D190021E11B /* ProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F353B1128008D190021E11B /* ProgressHUD in Frameworks */,
+				4F353B0E28008C920021E11B /* Kingfisher in Frameworks */,
+				4F353B0B28008C500021E11B /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +86,11 @@
 			dependencies = (
 			);
 			name = YuGiOh;
+			packageProductDependencies = (
+				4F353B0A28008C500021E11B /* SnapKit */,
+				4F353B0D28008C920021E11B /* Kingfisher */,
+				4F353B1028008D190021E11B /* ProgressHUD */,
+			);
 			productName = YuGiOh;
 			productReference = 4F353AF2280089AF0021E11B /* YuGiOh.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +119,11 @@
 				Base,
 			);
 			mainGroup = 4F353AE9280089AF0021E11B;
+			packageReferences = (
+				4F353B0928008C500021E11B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4F353B0C28008C920021E11B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				4F353B0F28008D190021E11B /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+			);
 			productRefGroup = 4F353AF3280089AF0021E11B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +364,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F353B0928008C500021E11B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4F353B0C28008C920021E11B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		4F353B0F28008D190021E11B /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F353B0A28008C500021E11B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F353B0928008C500021E11B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4F353B0D28008C920021E11B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F353B0C28008C920021E11B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		4F353B1028008D190021E11B /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F353B0F28008D190021E11B /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F353AEA280089AF0021E11B /* Project object */;
 }
