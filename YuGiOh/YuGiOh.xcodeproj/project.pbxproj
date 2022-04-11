@@ -31,6 +31,9 @@
 		4F353B432804806E0021E11B /* MainViewModelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B422804806E0021E11B /* MainViewModelling.swift */; };
 		4F353B452804853B0021E11B /* MainViewModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B442804853B0021E11B /* MainViewModuleOutput.swift */; };
 		4F353B4B28048FB40021E11B /* CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B4A28048FB40021E11B /* CardModels.swift */; };
+		4F353B4E280494BB0021E11B /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B4D280494BB0021E11B /* CardService.swift */; };
+		4F353B50280497CE0021E11B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B4F280497CE0021E11B /* Reachability.swift */; };
+		4F353B52280498410021E11B /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B51280498410021E11B /* CustomError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		4F353B422804806E0021E11B /* MainViewModelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelling.swift; sourceTree = "<group>"; };
 		4F353B442804853B0021E11B /* MainViewModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModuleOutput.swift; sourceTree = "<group>"; };
 		4F353B4A28048FB40021E11B /* CardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModels.swift; sourceTree = "<group>"; };
+		4F353B4D280494BB0021E11B /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		4F353B4F280497CE0021E11B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4F353B51280498410021E11B /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 			children = (
 				4F353B2A28044C7E0021E11B /* Application */,
 				4F353B4928048FA50021E11B /* Models */,
+				4F353B4C280490820021E11B /* Services */,
 				4F353B2D280455CF0021E11B /* Flows */,
 				4F353B212804476C0021E11B /* Library */,
 				4F353B33280459C40021E11B /* Resources */,
@@ -109,6 +116,7 @@
 				4F353B24280448CD0021E11B /* Helpers */,
 				4F353B232804481F0021E11B /* Protocols */,
 				4F353B222804479E0021E11B /* Base */,
+				4F353B51280498410021E11B /* CustomError.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4F353B192800A5320021E11B /* Router.swift */,
+				4F353B4F280497CE0021E11B /* Reachability.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -230,6 +239,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4F353B4C280490820021E11B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B4D280494BB0021E11B /* CardService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -317,12 +334,15 @@
 				4F353B3928045D7C0021E11B /* MainModuleConfigurator.swift in Sources */,
 				4F353B3D28045DC20021E11B /* MainViewModel.swift in Sources */,
 				4F353B142800A4D60021E11B /* BaseCoordinator.swift in Sources */,
+				4F353B52280498410021E11B /* CustomError.swift in Sources */,
 				4F353B36280459DB0021E11B /* Closures.swift in Sources */,
 				4F353B3B28045DB80021E11B /* MainViewController.swift in Sources */,
 				4F353B2928044AB40021E11B /* ApplicationCoordinator.swift in Sources */,
 				4F353B182800A5160021E11B /* DeepLinkOption.swift in Sources */,
+				4F353B4E280494BB0021E11B /* CardService.swift in Sources */,
 				4F353AF6280089AF0021E11B /* AppDelegate.swift in Sources */,
 				4F353B32280458D40021E11B /* MainCoordinatorOutput.swift in Sources */,
+				4F353B50280497CE0021E11B /* Reachability.swift in Sources */,
 				4F353B4B28048FB40021E11B /* CardModels.swift in Sources */,
 				4F353B432804806E0021E11B /* MainViewModelling.swift in Sources */,
 				4F353B452804853B0021E11B /* MainViewModuleOutput.swift in Sources */,
