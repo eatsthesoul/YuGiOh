@@ -14,6 +14,13 @@
 		4F353B0B28008C500021E11B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4F353B0A28008C500021E11B /* SnapKit */; };
 		4F353B0E28008C920021E11B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4F353B0D28008C920021E11B /* Kingfisher */; };
 		4F353B1128008D190021E11B /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 4F353B1028008D190021E11B /* ProgressHUD */; };
+		4F353B142800A4D60021E11B /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B132800A4D60021E11B /* BaseCoordinator.swift */; };
+		4F353B162800A4F90021E11B /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B152800A4F90021E11B /* Coordinatable.swift */; };
+		4F353B182800A5160021E11B /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B172800A5160021E11B /* DeepLinkOption.swift */; };
+		4F353B1A2800A5320021E11B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B192800A5320021E11B /* Router.swift */; };
+		4F353B1C2800A5480021E11B /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B1B2800A5480021E11B /* Presentable.swift */; };
+		4F353B1E2800A55F0021E11B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B1D2800A55F0021E11B /* Routable.swift */; };
+		4F353B202800A5740021E11B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B1F2800A5740021E11B /* UIApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,13 @@
 		4F353AFE280089B10021E11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F353B01280089B10021E11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F353B03280089B10021E11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F353B132800A4D60021E11B /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		4F353B152800A4F90021E11B /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		4F353B172800A5160021E11B /* DeepLinkOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
+		4F353B192800A5320021E11B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4F353B1B2800A5480021E11B /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		4F353B1D2800A55F0021E11B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		4F353B1F2800A5740021E11B /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,60 @@
 		4F353AF4280089AF0021E11B /* YuGiOh */ = {
 			isa = PBXGroup;
 			children = (
+				4F353B212804476C0021E11B /* Library */,
 				4F353AF5280089AF0021E11B /* AppDelegate.swift */,
+				4F353B172800A5160021E11B /* DeepLinkOption.swift */,
 				4F353AF9280089AF0021E11B /* ViewController.swift */,
 				4F353AFE280089B10021E11B /* Assets.xcassets */,
 				4F353B00280089B10021E11B /* LaunchScreen.storyboard */,
 				4F353B03280089B10021E11B /* Info.plist */,
 			);
 			path = YuGiOh;
+			sourceTree = "<group>";
+		};
+		4F353B212804476C0021E11B /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B25280448D80021E11B /* Extensions */,
+				4F353B24280448CD0021E11B /* Helpers */,
+				4F353B232804481F0021E11B /* Protocols */,
+				4F353B222804479E0021E11B /* Base */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		4F353B222804479E0021E11B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B132800A4D60021E11B /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4F353B232804481F0021E11B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B1B2800A5480021E11B /* Presentable.swift */,
+				4F353B152800A4F90021E11B /* Coordinatable.swift */,
+				4F353B1D2800A55F0021E11B /* Routable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4F353B24280448CD0021E11B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B192800A5320021E11B /* Router.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4F353B25280448D80021E11B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B1F2800A5740021E11B /* UIApplication.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +208,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F353B202800A5740021E11B /* UIApplication.swift in Sources */,
+				4F353B1E2800A55F0021E11B /* Routable.swift in Sources */,
+				4F353B162800A4F90021E11B /* Coordinatable.swift in Sources */,
 				4F353AFA280089AF0021E11B /* ViewController.swift in Sources */,
+				4F353B142800A4D60021E11B /* BaseCoordinator.swift in Sources */,
+				4F353B182800A5160021E11B /* DeepLinkOption.swift in Sources */,
 				4F353AF6280089AF0021E11B /* AppDelegate.swift in Sources */,
+				4F353B1A2800A5320021E11B /* Router.swift in Sources */,
+				4F353B1C2800A5480021E11B /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
