@@ -21,6 +21,15 @@
 		4F353B1E2800A55F0021E11B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B1D2800A55F0021E11B /* Routable.swift */; };
 		4F353B202800A5740021E11B /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B1F2800A5740021E11B /* UIApplication.swift */; };
 		4F353B2928044AB40021E11B /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B2828044AB40021E11B /* ApplicationCoordinator.swift */; };
+		4F353B30280458BF0021E11B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B2F280458BF0021E11B /* MainCoordinator.swift */; };
+		4F353B32280458D40021E11B /* MainCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B31280458D40021E11B /* MainCoordinatorOutput.swift */; };
+		4F353B36280459DB0021E11B /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B35280459DB0021E11B /* Closures.swift */; };
+		4F353B3928045D7C0021E11B /* MainModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B3828045D7C0021E11B /* MainModuleConfigurator.swift */; };
+		4F353B3B28045DB80021E11B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B3A28045DB80021E11B /* MainViewController.swift */; };
+		4F353B3D28045DC20021E11B /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B3C28045DC20021E11B /* MainViewModel.swift */; };
+		4F353B4028047AAB0021E11B /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B3F28047AAB0021E11B /* MainViewInput.swift */; };
+		4F353B432804806E0021E11B /* MainViewModelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B422804806E0021E11B /* MainViewModelling.swift */; };
+		4F353B452804853B0021E11B /* MainViewModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B442804853B0021E11B /* MainViewModuleOutput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +46,15 @@
 		4F353B1D2800A55F0021E11B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		4F353B1F2800A5740021E11B /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		4F353B2828044AB40021E11B /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		4F353B2F280458BF0021E11B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		4F353B31280458D40021E11B /* MainCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorOutput.swift; sourceTree = "<group>"; };
+		4F353B35280459DB0021E11B /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		4F353B3828045D7C0021E11B /* MainModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModuleConfigurator.swift; sourceTree = "<group>"; };
+		4F353B3A28045DB80021E11B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4F353B3C28045DC20021E11B /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4F353B3F28047AAB0021E11B /* MainViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
+		4F353B422804806E0021E11B /* MainViewModelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelling.swift; sourceTree = "<group>"; };
+		4F353B442804853B0021E11B /* MainViewModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModuleOutput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				4F353B2A28044C7E0021E11B /* Application */,
+				4F353B2D280455CF0021E11B /* Flows */,
 				4F353B212804476C0021E11B /* Library */,
+				4F353B33280459C40021E11B /* Resources */,
 				4F353AFE280089B10021E11B /* Assets.xcassets */,
 			);
 			path = YuGiOh;
@@ -134,6 +154,69 @@
 				4F353B03280089B10021E11B /* Info.plist */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		4F353B2D280455CF0021E11B /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B2E280455E00021E11B /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		4F353B2E280455E00021E11B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B31280458D40021E11B /* MainCoordinatorOutput.swift */,
+				4F353B2F280458BF0021E11B /* MainCoordinator.swift */,
+				4F353B3728045C960021E11B /* Main */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4F353B33280459C40021E11B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B34280459D20021E11B /* Constants */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F353B34280459D20021E11B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B35280459DB0021E11B /* Closures.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4F353B3728045C960021E11B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B3828045D7C0021E11B /* MainModuleConfigurator.swift */,
+				4F353B412804804E0021E11B /* ViewModel */,
+				4F353B3E28047A930021E11B /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4F353B3E28047A930021E11B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B3A28045DB80021E11B /* MainViewController.swift */,
+				4F353B3F28047AAB0021E11B /* MainViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F353B412804804E0021E11B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B3C28045DC20021E11B /* MainViewModel.swift */,
+				4F353B422804806E0021E11B /* MainViewModelling.swift */,
+				4F353B442804853B0021E11B /* MainViewModuleOutput.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,11 +302,20 @@
 				4F353B202800A5740021E11B /* UIApplication.swift in Sources */,
 				4F353B1E2800A55F0021E11B /* Routable.swift in Sources */,
 				4F353B162800A4F90021E11B /* Coordinatable.swift in Sources */,
+				4F353B30280458BF0021E11B /* MainCoordinator.swift in Sources */,
+				4F353B3928045D7C0021E11B /* MainModuleConfigurator.swift in Sources */,
+				4F353B3D28045DC20021E11B /* MainViewModel.swift in Sources */,
 				4F353B142800A4D60021E11B /* BaseCoordinator.swift in Sources */,
+				4F353B36280459DB0021E11B /* Closures.swift in Sources */,
+				4F353B3B28045DB80021E11B /* MainViewController.swift in Sources */,
 				4F353B2928044AB40021E11B /* ApplicationCoordinator.swift in Sources */,
 				4F353B182800A5160021E11B /* DeepLinkOption.swift in Sources */,
 				4F353AF6280089AF0021E11B /* AppDelegate.swift in Sources */,
+				4F353B32280458D40021E11B /* MainCoordinatorOutput.swift in Sources */,
+				4F353B432804806E0021E11B /* MainViewModelling.swift in Sources */,
+				4F353B452804853B0021E11B /* MainViewModuleOutput.swift in Sources */,
 				4F353B1A2800A5320021E11B /* Router.swift in Sources */,
+				4F353B4028047AAB0021E11B /* MainViewInput.swift in Sources */,
 				4F353B1C2800A5480021E11B /* Presentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
