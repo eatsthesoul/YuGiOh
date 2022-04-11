@@ -30,6 +30,7 @@
 		4F353B4028047AAB0021E11B /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B3F28047AAB0021E11B /* MainViewInput.swift */; };
 		4F353B432804806E0021E11B /* MainViewModelling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B422804806E0021E11B /* MainViewModelling.swift */; };
 		4F353B452804853B0021E11B /* MainViewModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B442804853B0021E11B /* MainViewModuleOutput.swift */; };
+		4F353B4B28048FB40021E11B /* CardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B4A28048FB40021E11B /* CardModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		4F353B3F28047AAB0021E11B /* MainViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
 		4F353B422804806E0021E11B /* MainViewModelling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelling.swift; sourceTree = "<group>"; };
 		4F353B442804853B0021E11B /* MainViewModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModuleOutput.swift; sourceTree = "<group>"; };
+		4F353B4A28048FB40021E11B /* CardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				4F353B2A28044C7E0021E11B /* Application */,
+				4F353B4928048FA50021E11B /* Models */,
 				4F353B2D280455CF0021E11B /* Flows */,
 				4F353B212804476C0021E11B /* Library */,
 				4F353B33280459C40021E11B /* Resources */,
@@ -219,6 +222,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4F353B4928048FA50021E11B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B4A28048FB40021E11B /* CardModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -312,6 +323,7 @@
 				4F353B182800A5160021E11B /* DeepLinkOption.swift in Sources */,
 				4F353AF6280089AF0021E11B /* AppDelegate.swift in Sources */,
 				4F353B32280458D40021E11B /* MainCoordinatorOutput.swift in Sources */,
+				4F353B4B28048FB40021E11B /* CardModels.swift in Sources */,
 				4F353B432804806E0021E11B /* MainViewModelling.swift in Sources */,
 				4F353B452804853B0021E11B /* MainViewModuleOutput.swift in Sources */,
 				4F353B1A2800A5320021E11B /* Router.swift in Sources */,
