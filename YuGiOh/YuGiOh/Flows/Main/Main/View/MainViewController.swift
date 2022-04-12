@@ -111,8 +111,11 @@ extension MainViewController: MainViewInput {
                 self.tableView.reloadData()
             case .error(let error):
                 self.stopLoading()
-                self.viewModel.loadCards()
-                print(error)
+                self.presentDefaultAlert(title: "Oops",
+                                         message: error.localizedDescription,
+                                         buttonTitle: "Try Again") {
+                    self.viewModel.loadCards()
+                }
             }
         }
     }

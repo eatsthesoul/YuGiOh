@@ -39,6 +39,7 @@
 		4F353B59280594330021E11B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B58280594330021E11B /* UIColor.swift */; };
 		4F353B5D2805D4160021E11B /* UIImage + Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B5C2805D4160021E11B /* UIImage + Assets.swift */; };
 		4F353B5F2805D9EE0021E11B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B5E2805D9EE0021E11B /* UIViewController.swift */; };
+		4F353B612805E6D80021E11B /* UIViewController + Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B602805E6D80021E11B /* UIViewController + Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		4F353B58280594330021E11B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		4F353B5C2805D4160021E11B /* UIImage + Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Assets.swift"; sourceTree = "<group>"; };
 		4F353B5E2805D9EE0021E11B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		4F353B602805E6D80021E11B /* UIViewController + Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Alert.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				4F353B58280594330021E11B /* UIColor.swift */,
 				4F353B5C2805D4160021E11B /* UIImage + Assets.swift */,
 				4F353B5E2805D9EE0021E11B /* UIViewController.swift */,
+				4F353B602805E6D80021E11B /* UIViewController + Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				4F353B5F2805D9EE0021E11B /* UIViewController.swift in Sources */,
 				4F353B162800A4F90021E11B /* Coordinatable.swift in Sources */,
 				4F353B572805898F0021E11B /* CardListCell.swift in Sources */,
+				4F353B612805E6D80021E11B /* UIViewController + Alert.swift in Sources */,
 				4F353B30280458BF0021E11B /* MainCoordinator.swift in Sources */,
 				4F353B3928045D7C0021E11B /* MainModuleConfigurator.swift in Sources */,
 				4F353B3D28045DC20021E11B /* MainViewModel.swift in Sources */,
