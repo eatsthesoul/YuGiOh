@@ -104,11 +104,13 @@ extension MainViewController: MainViewInput {
             case .idle:
                 break
             case .loading:
-                break
+                self.startLoading()
             case .success:
+                self.stopLoading()
                 self.tableView.setContentOffset(.zero, animated: true)
                 self.tableView.reloadData()
             case .error(let error):
+                self.stopLoading()
                 self.viewModel.loadCards()
                 print(error)
             }
