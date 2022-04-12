@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CardType: Int {
+enum CardType: Int, CaseIterable {
     case all
     case monster
     case spell
@@ -107,5 +107,6 @@ extension MainViewModel {
         case .trap:
             filteredCards = cards.filter { $0.type.contains(CardType.trap.name) }
         }
+        state = .success
     }
 }

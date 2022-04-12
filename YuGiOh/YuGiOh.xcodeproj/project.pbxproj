@@ -35,6 +35,9 @@
 		4F353B50280497CE0021E11B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B4F280497CE0021E11B /* Reachability.swift */; };
 		4F353B52280498410021E11B /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B51280498410021E11B /* CustomError.swift */; };
 		4F353B5528056C110021E11B /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B5428056C110021E11B /* ViewState.swift */; };
+		4F353B572805898F0021E11B /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B562805898F0021E11B /* CardListCell.swift */; };
+		4F353B59280594330021E11B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B58280594330021E11B /* UIColor.swift */; };
+		4F353B5D2805D4160021E11B /* UIImage + Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B5C2805D4160021E11B /* UIImage + Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,9 @@
 		4F353B4F280497CE0021E11B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4F353B51280498410021E11B /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		4F353B5428056C110021E11B /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
+		4F353B562805898F0021E11B /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
+		4F353B58280594330021E11B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		4F353B5C2805D4160021E11B /* UIImage + Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Assets.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +112,6 @@
 				4F353B2D280455CF0021E11B /* Flows */,
 				4F353B212804476C0021E11B /* Library */,
 				4F353B33280459C40021E11B /* Resources */,
-				4F353AFE280089B10021E11B /* Assets.xcassets */,
 			);
 			path = YuGiOh;
 			sourceTree = "<group>";
@@ -155,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				4F353B1F2800A5740021E11B /* UIApplication.swift */,
+				4F353B58280594330021E11B /* UIColor.swift */,
+				4F353B5C2805D4160021E11B /* UIImage + Assets.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 		4F353B33280459C40021E11B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4F353AFE280089B10021E11B /* Assets.xcassets */,
 				4F353B34280459D20021E11B /* Constants */,
 			);
 			path = Resources;
@@ -219,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				4F353B3A28045DB80021E11B /* MainViewController.swift */,
+				4F353B562805898F0021E11B /* CardListCell.swift */,
 				4F353B3F28047AAB0021E11B /* MainViewInput.swift */,
 			);
 			path = View;
@@ -341,6 +350,7 @@
 				4F353B202800A5740021E11B /* UIApplication.swift in Sources */,
 				4F353B1E2800A55F0021E11B /* Routable.swift in Sources */,
 				4F353B162800A4F90021E11B /* Coordinatable.swift in Sources */,
+				4F353B572805898F0021E11B /* CardListCell.swift in Sources */,
 				4F353B30280458BF0021E11B /* MainCoordinator.swift in Sources */,
 				4F353B3928045D7C0021E11B /* MainModuleConfigurator.swift in Sources */,
 				4F353B3D28045DC20021E11B /* MainViewModel.swift in Sources */,
@@ -355,7 +365,9 @@
 				4F353AF6280089AF0021E11B /* AppDelegate.swift in Sources */,
 				4F353B32280458D40021E11B /* MainCoordinatorOutput.swift in Sources */,
 				4F353B50280497CE0021E11B /* Reachability.swift in Sources */,
+				4F353B5D2805D4160021E11B /* UIImage + Assets.swift in Sources */,
 				4F353B4B28048FB40021E11B /* CardModels.swift in Sources */,
+				4F353B59280594330021E11B /* UIColor.swift in Sources */,
 				4F353B432804806E0021E11B /* MainViewModelling.swift in Sources */,
 				4F353B452804853B0021E11B /* MainViewModuleOutput.swift in Sources */,
 				4F353B1A2800A5320021E11B /* Router.swift in Sources */,
