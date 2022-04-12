@@ -84,3 +84,17 @@ struct CardImage: Codable {
     }
 }
 
+struct CardInfo {
+    let name: String
+    let type: String
+    let description: String
+    let imageUrl: String?
+    
+    init(card: Card) {
+        name = card.name
+        type = card.type
+        description = card.desc
+        imageUrl = card.cardImages.first?.imageURL
+    }
+}
+

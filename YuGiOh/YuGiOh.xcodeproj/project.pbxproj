@@ -34,6 +34,7 @@
 		4F353B4E280494BB0021E11B /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B4D280494BB0021E11B /* CardService.swift */; };
 		4F353B50280497CE0021E11B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B4F280497CE0021E11B /* Reachability.swift */; };
 		4F353B52280498410021E11B /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B51280498410021E11B /* CustomError.swift */; };
+		4F353B5528056C110021E11B /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F353B5428056C110021E11B /* ViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		4F353B4D280494BB0021E11B /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		4F353B4F280497CE0021E11B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		4F353B51280498410021E11B /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		4F353B5428056C110021E11B /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		4F353B212804476C0021E11B /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				4F353B5328056C050021E11B /* State */,
 				4F353B25280448D80021E11B /* Extensions */,
 				4F353B24280448CD0021E11B /* Helpers */,
 				4F353B232804481F0021E11B /* Protocols */,
@@ -247,6 +250,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		4F353B5328056C050021E11B /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4F353B5428056C110021E11B /* ViewState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,6 +346,7 @@
 				4F353B3D28045DC20021E11B /* MainViewModel.swift in Sources */,
 				4F353B142800A4D60021E11B /* BaseCoordinator.swift in Sources */,
 				4F353B52280498410021E11B /* CustomError.swift in Sources */,
+				4F353B5528056C110021E11B /* ViewState.swift in Sources */,
 				4F353B36280459DB0021E11B /* Closures.swift in Sources */,
 				4F353B3B28045DB80021E11B /* MainViewController.swift in Sources */,
 				4F353B2928044AB40021E11B /* ApplicationCoordinator.swift in Sources */,

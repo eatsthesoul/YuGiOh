@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MainViewInput: AnyObject {
-    
+    func didUpdate(with state: ViewState)
 }

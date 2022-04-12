@@ -20,5 +20,7 @@ final class MainViewController: UIViewController {
 }
 
 extension MainViewController: MainViewInput {
-    
+    func didUpdate(with state: ViewState) {
+        
+    }
 }

@@ -9,4 +9,13 @@ import Foundation
 
 protocol MainViewModelling {
     
+    //data loading
+    func loadCards()
+    
+    //data source
+    var numberOfItems: Int { get }
+    func getCardInfo(for indexPath: IndexPath) -> CardInfo
+    
+    //filtering
+    func filterBy(type: CardType)
 }

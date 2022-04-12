@@ -12,7 +12,9 @@ final class MainModuleConfigurator {
     
     func configure() -> (MainViewController) {
         let view = MainViewController(nibName: nil, bundle: nil)
-        let viewModel = MainViewModel()
+        
+        let cardService = CardService()
+        let viewModel = MainViewModel(cardService: cardService)
         
         view.viewModel = viewModel
         viewModel.view = view
